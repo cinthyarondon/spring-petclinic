@@ -25,7 +25,7 @@ jobs:
         run: |
           pack build $IMAGE_NAME \
             --builder paketobuildpacks/builder:base \
-            --path ./spring-petclinic \
+            --path . \
             --env "BP_JAVA_VERSION=8.*"
 
       - name: Login to Docker Hub
